@@ -1,0 +1,19 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 180,
+  "bracketSpacing": false,
+  "arrowParens": "avoid",
+  "trailingComma": "none",
+  "embeddedLanguageFormatting": "off",
+  "singleLineLiterals": true,
+  "operatorLinebreak": "none",
+  "flatChain": true,
+  "bracketSameLine": true,
+  "overrides":
+    [
+      {"files": ["*.ts", "*.tsx"], "options": {"singleQuote": true}},
+      {"files": [".prettierrc", "*.json"], "options": {"parser": "json", "printWidth": 80}},
+      {"files": ["src/prompts/**/*.ts"], "options": {"printWidth": 5000}}
+    ]
+}
