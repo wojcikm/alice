@@ -32,3 +32,5 @@ agi.db
 .idea
 
 drizzle*.md
+
+qdrant_data/

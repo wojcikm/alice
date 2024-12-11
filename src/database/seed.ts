@@ -12,7 +12,9 @@ const tools = [
     uuid: '24c5dbc0-c3ac-41d1-906f-f22b21272088',
     name: 'spotify',
     description:
-      `This tool interfaces with Spotify to play and search for music. It can handle tracks, playlists, and albums. When a specific track name is provided, it will play immediately. For general requests like 'play soundtrack from...', it will first search the Spotify database to confirm availability.`,
+      `This tool interfaces with Spotify to play and search for music. It can handle tracks, playlists, and albums. 
+      When a specific track name is provided, it will play immediately. 
+      For general requests like 'play soundtrack from...', it will first search the Spotify database to confirm availability.`,
     instruction: `Use the following actions based on the user's request type:
 
 1. For specific track requests (when the user provides both the exact track name and artist):
@@ -414,18 +416,18 @@ const categories = memory_categories;
 const users = [
   {
     uuid: uuidv4(),
-    name: 'Adam',
-    email: 'adam@overment.com',
+    name: 'Mike',
+    email: 'kontakt@michalwojcik.info',
     token: process.env.API_KEY, // random token for auth
     active: true,
     phone: '+1234567890', // placeholder phone
-    context: 'developer from Krakow',
+    context: 'sigma',
     environment: JSON.stringify({
-      location: 'Krakow, at home.',
+      location: 'Bieleckie Młyny, at home.',
       time: '2024-11-16T16:28:00.000Z',
       weather: 'Partly cloudy, 12°C',
-      music: 'AC/DC - Back in Black',
-      activity: 'Coding.'
+      music: 'Popek',
+      activity: 'Laying.'
     })
   }
 ];

@@ -14,16 +14,16 @@ interface ToolService {
 }
 
 export const toolsMap: Record<string, ToolService> = {
-  spotify: spotifyService,
-  memory: memoryService,
-  resend: resendService,
-  files: fileService,
-  speak: speakService,
-  linear: linearService,
-  maps: mapService,
-  crypto: cryptoService,
-  google: webService,
-  calendar: calendarService
+  // spotify: spotifyService,
+  // memory: memoryService,
+  // resend: resendService,
+  // files: fileService,
+  // speak: speakService,
+  // linear: linearService,
+  // maps: mapService,
+  // crypto: cryptoService,
+  // google: webService,
+  // calendar: calendarService
 } as const;
 
 export type ToolName = keyof typeof toolsMap; 
