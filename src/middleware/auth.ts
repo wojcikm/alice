@@ -15,12 +15,9 @@ export const authMiddleware = () => {
 
     const authHeader = c.req.header('Authorization');
 
-    if (!authHeader?.startsWith('Bearer ')) {
-      return c.json({error: 'Missing or invalid authorization header'}, {status: 401});
-    }
+    console.log('Auth header:', authHeader)
 
-    const token = authHeader.split(' ')[1];
-    const user = await userService.findByToken(token);
+    const user = await userService.findByToken(authHeader);
 
     if (!user) {
       return c.json({error: 'Invalid API key'}, {status: 401});

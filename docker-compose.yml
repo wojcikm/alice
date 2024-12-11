@@ -4,7 +4,10 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - .env:/app/.env
+      - .:/app
+      - /app/node_modules  # Prevents overwriting container node_modules with local
+      - /app/.git  # exclude .git directory
+    working_dir: /app
     environment:
       - NODE_ENV=development
     command: sh -c "bun generate && bun migrate && bun seed && bun run dev"
